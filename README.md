@@ -4,7 +4,7 @@
 
 ## 使用例子
 
-```HTML
+```Javascript
 <!DOCTYPE <!DOCTYPE html>
 <html>
 <head>
