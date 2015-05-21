@@ -26,18 +26,21 @@ JS调用如下：
 
 ```Javascript
 var dir = {
-  'SVN/': [
-  	'SmartGulp',
-  	{'html/': [{'音乐节抽奖活动': ['index.html', 'about.html']}]},
-  	{'Mediastyle/': [
-  		{'music_award/': [
-  			'index.css',
-  			{'img/': ['bg1.jpg','bg2.jpg']},
-  			{'slice':['icon_share.png','icon_comment.png']},
-  			{'sprite/':['inde.png']}
-  		]}
-  	]}
-  ]
+	'SVN/': [
+		'SmartGulp',
+		{'html/': [
+				{'音乐节抽奖活动': ['index.html', 'about.html']}
+			]
+		},
+		{'Mediastyle/': [
+			{'music_award/': [
+				'index.css',
+				{'img/': ['bg1.jpg','bg2.jpg']},
+				{'slice':['icon_share.png','icon_comment.png']},
+				{'sprite/':['inde.png']}
+			]}
+		]}
+	]
 }
 document.getElementById('pre').innerHTML = fileDirConstructor.run(dir);
 ```
