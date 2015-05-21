@@ -105,7 +105,7 @@ var fileDirConstructor = {
 	getBase3: function(dir, path){
 		return str = '<div class="line"><span class="text">'+ this.getSpace(path) +'&#x2514;&#x2500;&#x2500;&#xA0;' + dir + '</span></div>';
 	},
-	//通过last标志来判断是否是每个广度最后一个目录
+	//递归深度遍历处理目录
 	getDir: function(dir, str, path){
 		for(var i = 0; i < dir.length; i++){
 			//记录路径
