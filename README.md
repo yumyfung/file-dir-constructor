@@ -27,9 +27,9 @@ JS调用如下：
 ```Javascript
 var dir = {
 	'SVN/': [
-		'SmartGulp',
+		'config.txt',
 		{'html/': [{'音乐节抽奖活动': ['index.html', 'about.html']}]},
-		{'Mediastyle/': [
+		{'mediastyle/': [
 			{'music_award/': [
 				'index.css',
 				{'img/': ['bg1.jpg','bg2.jpg']},
@@ -47,7 +47,7 @@ document.getElementById('pre').innerHTML = fileDirConstructor.run(dir);
 ```HTML
 SVN/
 │
-├── SmartGulp                
+├── config.txt                
 │
 ├── html/                
 │   │
@@ -55,7 +55,7 @@ SVN/
 │       ├── index.html                
 │       └── about.html
 │
-└── Mediastyle/
+└── mediastyle/
     │
     └── music_award/
         ├── index.css                
