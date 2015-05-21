@@ -138,7 +138,7 @@ var fileDirConstructor = {
 	run: function(dir){
 		var result = '';
 		for(var key in dir){
-			result = this.getRoot(key) + this.getBase1(0);
+			result = this.getRoot(key) + this.getBase1([]);
 			if(dir[key].length){
 				result = this.getDir(dir[key], result, []);
 			}
