@@ -17,7 +17,7 @@ HTML结构如下：
 <div class="wrap">
     <pre id="pre"></pre>
 </div>
-<script type="text/javascript src="filedirconstructor.js"></script>
+<script type="text/javascript" src="filedirconstructor.js"></script>
 </body>
 </html>
 ```
@@ -28,10 +28,7 @@ JS调用如下：
 var dir = {
 	'SVN/': [
 		'SmartGulp',
-		{'html/': [
-				{'音乐节抽奖活动': ['index.html', 'about.html']}
-			]
-		},
+		{'html/': [{'音乐节抽奖活动': ['index.html', 'about.html']}]},
 		{'Mediastyle/': [
 			{'music_award/': [
 				'index.css',
