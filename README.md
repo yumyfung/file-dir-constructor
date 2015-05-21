@@ -120,7 +120,6 @@ var fileDirConstructor = {
 				}else {
 					str += this.getBase2(dir[i], path);
 				}
-
 			}else if(typeof dir[i] == 'object'){
 				for(var key in dir[i]){
 					if(i == dir.length - 1){
