@@ -4,7 +4,9 @@
 
 ## 使用例子
 
-```Javascript
+HTML结构如下：
+
+```HTML
 <!DOCTYPE <!DOCTYPE html>
 <html>
 <head>
@@ -16,31 +18,33 @@
     <pre id="pre"></pre>
 </div>
 <script type="text/javascript src="filedirconstructor.js"></script>
-<script type="text/javascript">
-  var dir = {
-  	'SVN/': [
-  		'SmartGulp',
-  		{'html/': [{'音乐节抽奖活动': ['index.html', 'about.html']}]},
-  		{'Mediastyle/': [
-  			{'music_award/': [
-  				'index.css',
-  				{'img/': ['bg1.jpg','bg2.jpg']},
-  				{'slice':['icon_share.png','icon_comment.png']},
-  				{'sprite/':['inde.png']}
-  			]}
-  		]}
-  	]
-  }
-  document.getElementById('pre').innerHTML = fileDirConstructor.run(dir);
-</script>
 </body>
 </html>
+```
+
+JS调用如下：
+
+```Javascript
+var dir = {
+  'SVN/': [
+  	'SmartGulp',
+  	{'html/': [{'音乐节抽奖活动': ['index.html', 'about.html']}]},
+  	{'Mediastyle/': [
+  		{'music_award/': [
+  			'index.css',
+  			{'img/': ['bg1.jpg','bg2.jpg']},
+  			{'slice':['icon_share.png','icon_comment.png']},
+  			{'sprite/':['inde.png']}
+  		]}
+  	]}
+  ]
+}
+document.getElementById('pre').innerHTML = fileDirConstructor.run(dir);
 ```
 
 ## 结果展示
 
 ```HTML
-<pre>
 SVN/
 │
 ├── SmartGulp                
@@ -66,7 +70,6 @@ SVN/
         │
         └── sprite/
             └── inde.png
-</pre>
 ```
 
 ## 源程序
